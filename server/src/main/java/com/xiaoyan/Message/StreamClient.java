@@ -9,15 +9,15 @@ public interface StreamClient {
 
     String INPUT="myMessage";
 
+    String INPUT2="myMessage2";
+
     @Input(INPUT)
     SubscribableChannel input();
 
-    @Output(INPUT)
+    @Output(INPUT2)
     MessageChannel output();
 
 
-
-//    String INPUT2="myMessage2";
 //
 //    @Input(INPUT2)
 //    SubscribableChannel input2();

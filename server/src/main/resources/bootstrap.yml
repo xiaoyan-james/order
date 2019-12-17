@@ -17,7 +17,7 @@ spring:
     base-url: http://192.168.150.237:9411/
   sleuth:
     sampler:
-      percentage: 1
+      probability: 1
 
 eureka:
   client:
@@ -27,19 +27,9 @@ eureka:
   instance:
     prefer-ip-address: true
 
-#      设置超时时间
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 6000
-feign:
-  hystrix:
-    enabled: true
 management:
   context-path: /
 logging:
   level:
-    org.springframework.cloud.netflix.feign: debug
+    org.springframework.cloud.openfeign: debug
+    org.springframework.cloud.bus: debug
