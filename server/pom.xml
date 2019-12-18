@@ -96,6 +96,12 @@
             <groupId>com.xiaoyan</groupId>
             <artifactId>product-client</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>de.siegmar</groupId>
+            <artifactId>logback-gelf</artifactId>
+            <version>1.1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
